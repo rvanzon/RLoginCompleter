@@ -1,5 +1,5 @@
 # RLoginCompleter #
-Richard van Zon
+by Richard van Zon
 
 http://www.relectus.com/
 
@@ -9,7 +9,6 @@ RLoginCompleter is a small framework for Cappuccino/Objectictive-J that lets you
 
 ## Demo ##
 I setup a simple demo here: 
-
 [http://www.relectus.com/os/RLoginCompleter/](http://www.relectus.com/os/RLoginCompleter/)
 
 ## Getting Started ##
