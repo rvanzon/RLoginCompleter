@@ -1,5 +1,8 @@
 .DS_Store
-Frameworks
+Frameworks/Appkit
+Frameworks/Objective-J
+Frameworks/Foundation
+Frameworks/Debug
 Build
 .push-package
 *.xcodeproj/*.pbxuser
