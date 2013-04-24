@@ -1,0 +1,12 @@
+.DS_Store
+Frameworks
+Build
+.push-package
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.perspectivev3
+xcuserdata/
+!*.xcodeproj/project.pbxproj
+*.xCodeSupport/
+*.XcodeSupport/
+*.sublime-project
+*.sublime-workspace
