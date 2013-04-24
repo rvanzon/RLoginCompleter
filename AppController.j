@@ -58,7 +58,8 @@
 	[loginWindow orderOut:nil];
 
 	// tell RLoginCompleter the credentials are correct and to store them
-	[loginCompleter storeUsername:@"test" andPassword:@"test"];
+	// [loginCompleter storeUsername:@"test" andPassword:@"test"];
+	[loginCompleter store];
 
 	var alert = [CPAlert alertWithMessageText:@"Login successful!"
 					defaultButton:@"OK"
