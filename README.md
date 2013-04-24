@@ -73,6 +73,11 @@ When the login is succeeded call:
 					  andPassword:[yourPasswordField stringValue]];
 That's it!
 
+### Known issues ###
+Safari saves the password, but RLoginCompleter can't restore it
+
+Multiple passwords in Firefox are not (yet) supported
+
 ## License ##
 
 The MIT License
