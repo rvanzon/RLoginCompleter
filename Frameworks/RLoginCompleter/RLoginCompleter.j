@@ -29,7 +29,7 @@
  */
 
 var RLoginCompleterDelay = 0.2,
-	RLoginCompleterHTML = "Frameworks/RLoginCompleter/login.html";
+	RLoginCompleterHTML = "Frameworks/RLoginCompleter/Resources/login.html";
 
 @implementation RLoginCompleter : CPObject
 {
@@ -80,8 +80,7 @@ var RLoginCompleterDelay = 0.2,
 	webview = [[CPWebView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
 
 	// too bad we have to use an external HTML-file
-	// I some tests, and found this is the only way of making it work
-	// in all browsers
+	// I did some tests, and found this is the only way of making it work in all browsers
 	[webview setMainFrameURL:RLoginCompleterHTML];
 	[webview setFrameLoadDelegate:self];
 	[webview setHidden:YES];
@@ -127,8 +126,8 @@ var RLoginCompleterDelay = 0.2,
 	if (![aWebView DOMWindow].document.forms[0])
 	{
 		[CPTimer scheduledTimerWithTimeInterval:RLoginCompleterDelay
-									   callback:function() { [window close]; }
-										repeats:NO];
+									callback:function() { [window close]; }
+									repeats:NO];
 		return;
 	}
 
@@ -144,18 +143,16 @@ var RLoginCompleterDelay = 0.2,
 	 * then send username and password to the delegate
 	 */
 	{
-		[CPTimer scheduledTimerWithTimeInterval:RLoginCompleterDelay
-									   callback:function() {
-											if (hasLoginCompleterRestored)
-									   			[delegate loginCompleterRestored:self username:form.username.value password:form.password.value];
+		[CPTimer scheduledTimerWithTimeInterval:RLoginCompleterDelay callback:function() {
+				if (hasLoginCompleterRestored)
+		   			[delegate loginCompleterRestored:self username:form.username.value password:form.password.value];
 
-									   		if (usernameField)
-									   			[usernameField setStringValue:form.username.value];
+		   		if (usernameField)
+		   			[usernameField setStringValue:form.username.value];
 
-									   		if (passwordField)
-									   			[passwordField setStringValue:form.password.value];
-									   	}
-										repeats:NO];
+		   		if (passwordField)
+		   			[passwordField setStringValue:form.password.value];
+		} repeats:NO];
 	}
 }
 
