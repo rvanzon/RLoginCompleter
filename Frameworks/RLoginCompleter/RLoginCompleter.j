@@ -33,8 +33,8 @@ var RLoginCompleterDelay = 0.2,
 
 @implementation RLoginCompleter : CPObject
 {
-    DOMElement      	loginFrame;
-    DOMElement      	form;
+	DOMElement			loginFrame;
+	DOMElement			form;
 
 	BOOL				hasLoginCompleterRestored;
 	BOOL				hasLoginCompleterCredentials;
@@ -126,8 +126,8 @@ var RLoginCompleterDelay = 0.2,
 	if (![aWebView DOMWindow].document.forms[0])
 	{
 		[CPTimer scheduledTimerWithTimeInterval:RLoginCompleterDelay
-									callback:function() { [window close]; }
-									repeats:NO];
+						callback:function() { [window close]; }
+						repeats:NO];
 		return;
 	}
 
