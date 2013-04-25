@@ -33,18 +33,18 @@ var RLoginCompleterDelay = 0.2,
 
 @implementation RLoginCompleter : CPObject
 {
-	DOMElement			loginFrame;
-	DOMElement			form;
+	DOMElement				loginFrame;
+	DOMElement				form;
 
-	BOOL				hasLoginCompleterRestored;
-	BOOL				hasLoginCompleterCredentials;
+	BOOL					hasLoginCompleterRestored;
+	BOOL					hasLoginCompleterCredentials;
 
-	CPWebView			webview;
-	CPWindow			window;
+	CPWebView				webview;
+	CPWindow				window;
 
-	@outlet	CPTextField usernameField;
-	@outlet	CPTextField passwordField;
-	@outlet id			delegate;
+	@outlet	CPTextField 	usernameField;
+	@outlet	CPTextField 	passwordField;
+	@outlet id				delegate;
 }
 
 - (id)initWithDelegate:(id)aDelegate
