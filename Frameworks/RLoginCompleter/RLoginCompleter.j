@@ -42,8 +42,8 @@ var RLoginCompleterDelay = 0.2,
 	CPWebView				webview;
 	CPWindow				window;
 
-	@outlet	CPTextField 	usernameField;
-	@outlet	CPTextField 	passwordField;
+	@outlet	CPTextField		usernameField;
+	@outlet	CPTextField		passwordField;
 	@outlet id				delegate;
 }
 
