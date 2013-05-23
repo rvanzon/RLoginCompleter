@@ -68,6 +68,10 @@ You can also use the delegate method yourself. First add:
 
 	RLoginCompleter	loginCompleter;
 
+Initialize the object (typically in your awakeFromCib)
+
+	loginCompleter = [[RLoginCompleter alloc] initWithDelegate:self];
+
 Then add the delegate method that is called when a username and password is filled out by web browser:
 
 	- (void)loginCompleterRestored:(RLoginCompleter)loginCompleter 
