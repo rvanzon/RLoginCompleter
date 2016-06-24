@@ -1,3 +1,5 @@
+**WARNING: UNMAINTAINED AND PROBABLY NOT WORKING ANYMORE**
+
 # RLoginCompleter #
 by Richard van Zon
 
